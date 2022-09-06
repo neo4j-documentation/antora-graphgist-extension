@@ -24,12 +24,12 @@
   },
   "homepage": "https://github.com/neo4j-documentation/antora-graphgist-extension#readme",
   "devDependencies": {
-    "@asciidoctor/core": "^2.2.6",
-    "chai": "^4.3.6",
-    "mocha": "^10.0.0"
+    "@asciidoctor/core": "~2.2",
+    "chai": "~4.3",
+    "mocha": "~10.0"
   },
   "dependencies": {
     "asciidoctor-jupyter": "^0.1.1",
-    "node-fetch": "^3.2.10"
+    "node-fetch": "~2.6"
   }
 }
