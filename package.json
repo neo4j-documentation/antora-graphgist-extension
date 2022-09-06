@@ -2,7 +2,7 @@
   "name": "@neo4j-documentation/antora-graphgist-extension",
   "version": "0.1.0",
   "description": "An Antora extension that enhances GraphGists",
-  "main": "lin/index.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib"
   },
