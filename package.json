@@ -1,0 +1,34 @@
+{
+  "name": "@neo4j-documentation/antora-graphgist-extension",
+  "version": "0.1.0",
+  "description": "An Antora extension that enhances GraphGists",
+  "main": "lin/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "mocha spec/**.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neo4j-documentation/antora-graphgist-extension.git"
+  },
+  "keywords": [
+    "antora",
+    "extension"
+  ],
+  "author": "Guillaume Grossetie <ggrossetie@yuzutech.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neo4j-documentation/antora-graphgist-extension/issues"
+  },
+  "homepage": "https://github.com/neo4j-documentation/antora-graphgist-extension#readme",
+  "devDependencies": {
+    "@asciidoctor/core": "^2.2.6",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  },
+  "dependencies": {
+    "asciidoctor-jupyter": "^0.1.1"
+  }
+}
