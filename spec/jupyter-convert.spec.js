@@ -1,13 +1,14 @@
 const path = require('path')
 const fs = require('fs').promises
-const { convert } = require('../lib/graphgists/jupyter-converter')
+const { convert, register } = require('../lib/graphgists/jupyter-converter')
 const chai = require('chai')
 const expect = chai.expect
 
 describe('Jupyter converter', () => {
   it('should convert an AsciiDoc to a Jupyter Notebook', async () => {
     const input = await fs.readFile(path.join(__dirname, '..', 'spec', 'fixtures', 'exploring-star-wars.adoc'), 'utf8')
-    const jupyterNotebook = convert(input)
+    const registry = register()
+    const jupyterNotebook = convert(input, registry)
     const ipynb = JSON.parse(jupyterNotebook)
     const codeCells = ipynb.cells.filter((cell) => cell.cell_type === 'code')
     // install/setup instructions
